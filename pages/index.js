@@ -1,11 +1,19 @@
-import Layout from "../components/Layout";
+/**
+ * We imported matter to parse the front matter
+ */
+import matter from "gray-matter";
 
-const Index = ({ title, description, ...props }) => {
+import Layout from "@components/Layout";
+import PostList from "@components/PostList";
+
+const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title}>
       <h1 className="title">Welcome to my blog!</h1>
       <p className="description">{description}</p>
-      <main>Posts go here!</main>
+      <main>
+        <PostList posts={posts}></PostList>
+      </main>
     </Layout>
   );
 };
@@ -21,10 +29,32 @@ export default Index;
  * The page will be rendered at build time, and you can pass that data to its child components.
  */
 export async function getStaticProps() {
-  const configData = await import(`../siteconfig.json`);
+  const configData = await import(`@/siteconfig.json`);
+
+  /**
+   * We added a posts variable in here that pulls in the Markdown files,
+   * parses them, and then passes that posts variable into the props for Index.
+   */
+  const posts = ((context) => {
+    const keys = context.keys();
+    const values = keys.map(context);
+
+    const data = keys.map((key, index) => {
+      let slug = key.replace(/^.*[\\\/]/, "").slice(0, -3);
+      const value = values[index];
+      const document = matter(value.default);
+      return {
+        frontmatter: document.data,
+        markdownBody: document.content,
+        slug,
+      };
+    });
+    return data;
+  })(require.context("../posts", true, /\.md$/));
 
   return {
     props: {
+      posts,
       title: configData.default.title,
       description: configData.default.description,
     },

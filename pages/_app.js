@@ -1,7 +1,24 @@
-import "@/styles/globals.css";
+import React from "react";
+// import NextApp from "next/app";
+import { ThemeProvider } from "theme-ui";
+import theme from "../utils/theme";
+// import "@/styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+// export default class App extends NextApp {
+//   render() {
+//     const { Component, pageProps } = this.props;
+//     return (
+//       <ThemeProvider theme={theme}>
+//         <Component {...pageProps} />
+//       </ThemeProvider>
+//     );
+//   }
+// }
 
-export default MyApp;
+const App = ({ Component, pageProps }) => (
+  <ThemeProvider theme={theme}>
+    <Component {...pageProps} />
+  </ThemeProvider>
+);
+
+export default App;

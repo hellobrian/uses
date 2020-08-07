@@ -2,14 +2,20 @@ export default {
   colors: {
     text: "#111",
     background: "#fff",
-    primary: "tomato",
-    secondary: "#3f3f3f",
-    muted: "#e0e0e0",
-    highlight: "#9f9f9f",
-    gray: "#6c6c6c",
-    accent: "#3f3f3f",
+    primary: "#0000FF",
   },
   fonts: {
-    body: "Comic Sans MS",
+    heading: `'Inter', sans-serif;`,
+    body: `'Inter', sans-serif;`,
+  },
+  fontWeights: {
+    body: 400,
+    heading: 700,
+    bold: 700,
+  },
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  lineHeights: {
+    body: 1.5,
+    heading: 1.125,
   },
 };

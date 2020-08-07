@@ -3,7 +3,7 @@ import Header from "@components/Header";
 
 export default function Layout({ children, pageTitle, ...props }) {
   return (
-    <>
+    <div {...props}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{pageTitle}</title>
@@ -13,6 +13,6 @@ export default function Layout({ children, pageTitle, ...props }) {
         <div className="content">{children}</div>
       </section>
       <footer>Built by me!</footer>
-    </>
+    </div>
   );
 }

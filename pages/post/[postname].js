@@ -8,14 +8,20 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+    <Layout pageTitle={`${siteTitle} | ${frontmatter.name}`}>
       <Link href="/">
-        <a>Back to post list</a>
+        <a>Back</a>
       </Link>
       <article>
-        <h1>{frontmatter.title}</h1>
-        <p>By {frontmatter.author}</p>
+        <h1>{frontmatter.name}</h1>
+        <h2>{frontmatter.price}</h2>
         <div>
+          <div>
+            tags:{" "}
+            {frontmatter.tags.map((tag, index) => (
+              <span key={`tag-${index}`}>{`${tag} `}</span>
+            ))}
+          </div>
           <ReactMarkdown source={markdownBody} />
         </div>
       </article>

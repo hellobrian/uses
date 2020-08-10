@@ -1,11 +1,6 @@
 import React from "react";
-import { ThemeProvider } from "theme-ui";
-import theme from "@utils/theme";
+import "@styles/globals.css";
 
-const App = ({ Component, pageProps }) => (
-  <ThemeProvider theme={theme}>
-    <Component {...pageProps} />
-  </ThemeProvider>
-);
+const App = ({ Component, pageProps }) => <Component {...pageProps} />;
 
 export default App;

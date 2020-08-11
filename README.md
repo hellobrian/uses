@@ -1,4 +1,4 @@
-# Yuuzus
+# yuuzus.
 
 Shoutout to these helpful resources:
 
@@ -7,7 +7,7 @@ Shoutout to these helpful resources:
   - for some reason `Text` component wouldn't read from theme so I reverted back to using css modules and css custom properties
   
  
- ## Inspiration
+ ## inspiration.
  
  - https://prkns.me/uses/
  - https://silvandiepen.nl/uses

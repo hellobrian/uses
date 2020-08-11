@@ -1,4 +1,4 @@
-import styles from "./theme.module.css";
+import styles from "@styles/theme.module.css";
 
 const ColorTile = ({ color, border = false }) => (
   <div className={styles.colorTile}>
@@ -45,7 +45,7 @@ const Space = () => {
   );
 };
 
-export const Theme = () => {
+const Theme = () => {
   return (
     <div className={styles.themePage}>
       <h1>Theme</h1>
@@ -58,3 +58,5 @@ export const Theme = () => {
     </div>
   );
 };
+
+export default Theme;

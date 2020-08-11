@@ -1,19 +1,18 @@
 import Link from "next/link";
+import YuzuIcon from "@components/YuzuIcon";
+import styles from "./Header.module.css";
 
 export default function Header() {
   return (
-    <>
-      <header className="header">
-        <nav className="nav">
-          <Link href="/">
-            <a>Uses</a>
-          </Link>
-          {` `}
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </nav>
-      </header>
-    </>
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <Link href="/">
+          <a className={styles.link}>
+            <YuzuIcon></YuzuIcon>
+            <h1 className={styles.linkText}>yuuzus</h1>
+          </a>
+        </Link>
+      </nav>
+    </header>
   );
 }

@@ -2,6 +2,7 @@
 name: "Anne Pro 2"
 tags: ["gaming", "pc", "keyboard"]
 price: "119.00"
+overview: "A 60% Mechanical keyboard I use mainly for gaming and some coding"
 ---
 
 #### Overview

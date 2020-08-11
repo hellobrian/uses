@@ -1,0 +1,20 @@
+.header {
+  padding: 16px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.link > .linkText {
+  margin: 0;
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-body);
+  position: relative;
+  bottom: -5px;
+}

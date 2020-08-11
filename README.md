@@ -12,3 +12,4 @@ Shoutout to these helpful resources:
  - https://prkns.me/uses/
  - https://silvandiepen.nl/uses
  - https://daverupert.com/bookshelf
+ - https://labs.jensimmons.com/ `column-count: 2`

@@ -17,6 +17,10 @@
   grid-gap: 8px;
 }
 
+.yuzuIcon {
+  width: auto;
+}
+
 .themePage {
   margin: 16px;
 }

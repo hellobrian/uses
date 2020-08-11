@@ -1,3 +1,4 @@
+import YuzuIcon from "@components/YuzuIcon";
 import styles from "@styles/theme.module.css";
 
 const ColorTile = ({ color, border = false }) => (
@@ -19,6 +20,7 @@ const Colors = () => {
       <ColorTile color="var(--text)"></ColorTile>
       <ColorTile color="var(--background)" border></ColorTile>
       <ColorTile color="var(--primary)"></ColorTile>
+      <ColorTile color="var(--accent)"></ColorTile>
     </div>
   );
 };
@@ -55,6 +57,10 @@ const Theme = () => {
       <TypeScale />
       <h2>Space</h2>
       <Space />
+      <h2>Icons</h2>
+      <div>
+        <YuzuIcon className={styles.yuzuIcon}></YuzuIcon>
+      </div>
     </div>
   );
 };

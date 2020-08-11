@@ -9,12 +9,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 
   return (
     <Layout pageTitle={`${siteTitle} | ${frontmatter.name}`}>
-      <Link href="/">
-        <a>Back</a>
-      </Link>
       <article>
         <h1>{frontmatter.name}</h1>
-        <h2>{frontmatter.price}</h2>
         <div>
           <div>
             tags:{" "}

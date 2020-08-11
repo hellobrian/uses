@@ -2,6 +2,7 @@
  * We imported matter to parse the front matter
  */
 import matter from "gray-matter";
+import styles from "@styles/index.module.css";
 
 import Layout from "@components/Layout";
 import PostList from "@components/PostList";
@@ -9,8 +10,7 @@ import PostList from "@components/PostList";
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title}>
-      <h1 className="title">Welcome to my blog!</h1>
-      <p className="description">{description}</p>
+      <h1 className={styles.description}>{description}</h1>
       <main>
         <PostList posts={posts}></PostList>
       </main>

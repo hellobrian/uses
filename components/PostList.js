@@ -1,6 +1,15 @@
 import Link from "next/link";
 import styles from "./PostList.module.css";
 
+export function Post({ name, children }) {
+  return (
+    <a className={styles.post}>
+      <span className={styles.post__name}>{name}</span>
+      <div className={styles.post__overview}>{children}</div>
+    </a>
+  );
+}
+
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
 
@@ -13,14 +22,9 @@ export default function PostList({ posts }) {
             return (
               <li key={post.slug}>
                 <Link href={{ pathname: `/post/${post.slug}` }}>
-                  <a className={styles.thing}>
-                    <span className={styles.thing__name}>
-                      {post.frontmatter.name}
-                    </span>
-                    <div className={styles.overview}>
-                      {post.frontmatter.overview}
-                    </div>
-                  </a>
+                  <Post name={post.frontmatter.name}>
+                    {post.frontmatter.overview}
+                  </Post>
                 </Link>
               </li>
             );

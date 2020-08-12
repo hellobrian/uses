@@ -1,12 +1,5 @@
-.postList {
-  padding: 16px;
-}
-
-.postList li {
-  list-style-type: none;
-}
-
-.thing {
+/* Post */
+.post {
   padding: 32px;
   display: inline-block;
   border-radius: var(--border-radius);
@@ -14,18 +7,7 @@
   transition: 200ms;
 }
 
-.thing:hover,
-.thing:focus {
-  background: var(--primary);
-  color: var(--background);
-}
-
-.thing:hover > .thing__name,
-.thing:focus > .thing__name {
-  color: var(--background);
-}
-
-.thing__name {
+.post__name {
   border-radius: var(--border-radius);
   border: var(--border-size) solid transparent;
   display: inline-block;
@@ -36,6 +18,26 @@
   transition: 200ms;
 }
 
-.overview {
+.post__overview {
   font-size: 18px;
+}
+
+.post:hover,
+.post:focus {
+  background: var(--primary);
+  color: var(--background);
+}
+
+.post:hover > .post__name,
+.post:focus > .post__name {
+  color: var(--background);
+}
+
+/* PostList */
+.postList {
+  padding: 16px;
+}
+
+.postList li {
+  list-style-type: none;
 }

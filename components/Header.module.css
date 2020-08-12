@@ -1,11 +1,18 @@
 .header {
-  padding: 16px;
+  width: 100vw;
+  padding: 32px 0;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .link {
   display: inline-flex;
   align-items: center;
   position: relative;
+  grid-column-start: 3;
 }
 
 .link > .linkText {

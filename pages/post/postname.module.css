@@ -1,0 +1,21 @@
+.blog__content {
+  column-count: 1;
+}
+.blog h1,
+.blog h2 {
+  margin-bottom: 32px;
+}
+
+.blog__content h2 {
+  margin: 32px 0;
+}
+
+.blog__content ul,
+.blog__content p {
+  margin-bottom: 16px;
+}
+
+.blog__content img:first-child {
+  border: 20px solid white;
+  max-width: 900px;
+}

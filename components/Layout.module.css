@@ -2,8 +2,10 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .footer {
-  padding: 16px;
+  margin-top: 32px;
 }

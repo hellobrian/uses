@@ -1,0 +1,17 @@
+.homePage h1 {
+  margin-bottom: 64px;
+  background: black;
+  color: var(--white);
+  padding: 16px;
+  font-size: 64px;
+  transform: rotate(-2deg);
+  font-style: italic;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .homePage h1 {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

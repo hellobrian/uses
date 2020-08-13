@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 import Layout from "@components/Layout";
 
-import styles from "./postname.module.css";
+import styles from "./postname.module.scss";
 
 export default function BlogPost({
   siteTitle,

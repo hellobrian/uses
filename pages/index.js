@@ -2,18 +2,20 @@
  * We imported matter to parse the front matter
  */
 import matter from "gray-matter";
-import styles from "@styles/index.module.css";
 
 import Layout from "@components/Layout";
 import PostList from "@components/PostList";
+import styles from "./index.module.scss";
 
-const Index = ({ posts, title, description, ...props }) => {
+const Index = ({ posts, title, description }) => {
   return (
     <Layout pageTitle={title}>
-      <h1 className={styles.description}>{description}</h1>
-      <main>
-        <PostList posts={posts}></PostList>
-      </main>
+      <div className={styles.homePage}>
+        <h1>{description}</h1>
+        <main>
+          <PostList posts={posts}></PostList>
+        </main>
+      </div>
     </Layout>
   );
 };

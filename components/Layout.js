@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "@components/Header";
-import styles from "./Layout.module.css";
+import styles from "./Layout.module.scss";
 
 export default function Layout({ children, pageTitle, ...props }) {
   return (

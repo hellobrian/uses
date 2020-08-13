@@ -1,18 +1,24 @@
 .header {
   width: 100vw;
-  padding: 32px 0;
+  padding: 64px 0;
 }
 
 .nav {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 64px;
 }
 
 .link {
   display: inline-flex;
   align-items: center;
-  position: relative;
-  grid-column-start: 3;
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 .link > .linkText {

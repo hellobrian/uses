@@ -1,6 +1,6 @@
 import Link from "next/link";
 import YuzuIcon from "@components/YuzuIcon";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 export default function Header() {
   return (

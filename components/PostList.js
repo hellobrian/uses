@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./PostList.module.css";
+import styles from "./PostList.module.scss";
 
 export function Post({ href, name, children }) {
   return (

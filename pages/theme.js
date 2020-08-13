@@ -51,16 +51,24 @@ const Theme = () => {
   return (
     <div className={styles.themePage}>
       <h1>Theme</h1>
-      <h2>Colors</h2>
-      <Colors />
-      <h2>Type Scale</h2>
-      <TypeScale />
-      <h2>Space</h2>
-      <Space />
-      <h2>Icons</h2>
-      <div>
-        <YuzuIcon className={styles.yuzuIcon}></YuzuIcon>
-      </div>
+      <section>
+        <h2>Colors</h2>
+        <Colors />
+      </section>
+      <section>
+        <h2>Type Scale</h2>
+        <TypeScale />
+      </section>
+      <section>
+        <h2>Space</h2>
+        <Space />
+      </section>
+      <section>
+        <h2>Icons</h2>
+        <div>
+          <YuzuIcon className={styles.yuzuIcon}></YuzuIcon>
+        </div>
+      </section>
     </div>
   );
 };

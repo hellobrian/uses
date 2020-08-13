@@ -17,10 +17,32 @@
   grid-gap: 8px;
 }
 
+.space p {
+  font-size: 24px;
+}
+
 .yuzuIcon {
   width: auto;
 }
 
 .themePage {
-  margin: 16px;
+  max-width: 900px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.themePage h1 {
+  display: block;
+  margin: 32px 0;
+}
+
+.themePage h2 {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.themePage section {
+  margin-bottom: 32px;
+  border: 1px solid var(--white);
+  padding: 32px;
 }

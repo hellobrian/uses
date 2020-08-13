@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="/">
           <a className={styles.link}>
             <YuzuIcon></YuzuIcon>
-            <h1 className={styles.linkText}>yuuzus</h1>
+            <h1 className={styles.linkText}>yuuz.</h1>
           </a>
         </Link>
       </nav>

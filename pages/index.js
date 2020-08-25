@@ -11,7 +11,7 @@ const Index = ({ posts, title, description }) => {
   return (
     <Layout pageTitle={title}>
       <div className={styles.homePage}>
-        <h1>{description}</h1>
+        {/* <h1>{description}</h1> */}
         <main>
           <PostList posts={posts}></PostList>
         </main>

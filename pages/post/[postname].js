@@ -1,7 +1,7 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
-import Layout from "@components/Layout";
+import { Layout } from "@components";
 
 import styles from "./postname.module.scss";
 

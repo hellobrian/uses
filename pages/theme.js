@@ -1,6 +1,3 @@
-import YuzuIcon from "@components/YuzuIcon";
-import styles from "@styles/theme.module.css";
-
 const ColorTile = ({ color, border = false }) => (
   <div className={styles.colorTile}>
     <div

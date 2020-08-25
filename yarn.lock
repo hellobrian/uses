@@ -2010,11 +2010,6 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/preset-scss@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-scss/-/preset-scss-1.0.2.tgz#6c993b972c6f599237082b55e12c875f0f66ab06"
-  integrity sha512-Kq+Y3H7qRBxocLW57V9HtQhrw9ZzmTodFCjf+OelMh1k6SZ7/FvJHb7mtWofafHcqq1tSQlNIgYMtHRDJ64WVg==
-
 "@storybook/react@^6.0.17":
   version "6.0.17"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.0.17.tgz#7ebd1c2ac4f9a491d22b78d8a59a77010ec77228"

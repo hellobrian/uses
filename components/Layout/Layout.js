@@ -1,8 +1,9 @@
+import React from "react";
 import Head from "next/head";
-import Header from "@components/Header";
+import { Header } from "../Header/Header";
 import styles from "./Layout.module.scss";
 
-export default function Layout({ children, pageTitle, ...props }) {
+export function Layout({ children, pageTitle, ...props }) {
   return (
     <>
       <Head>

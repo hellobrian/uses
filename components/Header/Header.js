@@ -1,8 +1,9 @@
+import React from "react";
 import Link from "next/link";
-import YuzuIcon from "@components/YuzuIcon";
+import { YuzuIcon } from "./YuzuIcon";
 import styles from "./Header.module.scss";
 
-export default function Header() {
+export function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>

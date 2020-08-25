@@ -3,8 +3,8 @@
  */
 import matter from "gray-matter";
 
-import Layout from "@components/Layout";
-import PostList from "@components/PostList";
+import { Layout, PostList } from "@components";
+
 import styles from "./index.module.scss";
 
 const Index = ({ posts, title, description }) => {

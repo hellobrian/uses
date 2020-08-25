@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import styles from "./PostList.module.scss";
 
@@ -12,7 +13,7 @@ export function Post({ href, name, children }) {
   );
 }
 
-export default function PostList({ posts }) {
+export function PostList({ posts }) {
   if (posts === "undefined") return null;
 
   return (

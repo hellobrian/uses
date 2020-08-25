@@ -3,7 +3,7 @@ import React from "react";
 /**
  * Resize with CSS by setting height: auto and width to a px size (or vice versa)
  */
-function YuzuIcon({ ...props }) {
+export function YuzuIcon({ ...props }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

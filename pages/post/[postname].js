@@ -1,27 +1,43 @@
-import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
-import Layout from "@components/Layout";
+import { Layout } from "@components";
 
-export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+import styles from "./postname.module.scss";
+
+export default function BlogPost({
+  siteTitle,
+  frontmatter,
+  markdownBody,
+  hero,
+}) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout pageTitle={`${siteTitle} | ${frontmatter.name}`}>
-      <article>
-        <h1>{frontmatter.name}</h1>
-        <div>
+    <>
+      <Layout pageTitle={`${siteTitle} | ${frontmatter.name}`}>
+        <article className={styles.blog}>
+          <img
+            className={styles.blog__hero}
+            src={frontmatter.hero}
+            alt={`${frontmatter.name} - ${frontmatter.overview}`}
+          />
+          <h1>{frontmatter.name}</h1>
+          <h2>{frontmatter.overview}</h2>
+          <div>
+            <div className={styles.blog__content}>
+              <ReactMarkdown source={markdownBody} />
+            </div>
+          </div>
           <div>
             tags:{" "}
             {frontmatter.tags.map((tag, index) => (
               <span key={`tag-${index}`}>{`${tag} `}</span>
             ))}
           </div>
-          <ReactMarkdown source={markdownBody} />
-        </div>
-      </article>
-    </Layout>
+        </article>
+      </Layout>
+    </>
   );
 }
 

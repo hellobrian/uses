@@ -2,10 +2,11 @@
 name: "Anne Pro 2"
 tags: ["gaming", "pc", "keyboard"]
 price: "119.00"
-overview: "A 60% Mechanical keyboard I use mainly for gaming and some coding"
+overview: "A pre-built 60% mechanical keyboard used for gaming and coding on Windows."
+hero: "/anne-pro-2/hero.jpg"
 ---
 
-#### Overview
+### Overview
 
 - Prebuilt with variety of gateron and kailh switches to choose from
 - Black or White colorway
@@ -17,17 +18,21 @@ overview: "A 60% Mechanical keyboard I use mainly for gaming and some coding"
 
 I got the Anne Pro 2 in white with gateron blue switches.
 
-#### Nice stock keycaps
+### Nice stock keycaps
 
 The Anne Pro 2 comes with PBT keycaps; they're shinethrough so that you can see the RGB lighting shine through the characters printed on the keycaps.
 
-I also appreciate that these stock keycaps use a normal sans-serif font; it helps the keyboard look cleaner and with less of a gamer aesthetic.
+I appreciate that these stock keycaps use a normal font - it's not super stylized and ; it helps the keyboard look cleaner and with less of a gamer aesthetic.
+
+![brownish-bronze type printed on the side of the stock keycaps](/anne-pro-2/sideprinted-text.jpg)
 
 There is a brownish bronze typeface printed on the bottom sides of the keycaps to indicate what keys to use when using the function (Fn) key modifier. It's functional if you plan to stick with the stock Fn layout but aesthetically, I'd prefer if these weren't there.
 
 Thankfully, the Anne Pro 2 is an OEM 60% keyboard layout so it's easier to find replacement keycaps for this board in the future. For now though, I plan on sticking with this stock keycap set for a while.
 
-#### Software is really great
+### Software is really great
+
+![keycaps](https://picsum.photos/200)
 
 The software is very good and is one of the main reasons why I bought the Anne Pro 2.
 

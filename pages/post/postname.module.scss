@@ -1,0 +1,43 @@
+.blog {
+  max-width: 900px;
+  width: 100vw;
+}
+.blog h1,
+.blog h2 {
+  display: inline-flex;
+  margin-bottom: 32px;
+}
+
+.blog h1 {
+  display: inline-block;
+  padding: 16px;
+  background: black;
+  margin-bottom: 32px;
+}
+
+.blog h2 {
+  display: inline-block;
+  padding: 16px;
+  background: black;
+  margin-bottom: 32px;
+}
+
+.blog__hero {
+  border: 20px solid var(--white);
+  width: 100%;
+  margin: 32px 0;
+}
+
+.blog__content h2 {
+  margin-bottom: 32px;
+}
+
+.blog__content ul,
+.blog__content p {
+  margin-bottom: 16px;
+}
+
+.blog__content img:first-child {
+  border: 20px solid var(--white);
+  max-width: 900px;
+}
